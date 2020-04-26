@@ -1,6 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head>    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
@@ -41,7 +42,8 @@
 
   </head>
   <body>
-  
+  <!-- menu de el curso -->
+ 
   <!--START SCROLL TOP BUTTON -->
     <a class="scrollToTop" href="#">
       <i class="fa fa-angle-up"></i>      
@@ -156,8 +158,10 @@
          <div class="mu-page-breadcrumb-area">
            <h2>Salesforce crm</h2>
            <ol class="breadcrumb">
-            <li><a href="#">no te desanimes</a></li>           
-            <li class="active">aprenderas muchisimo</li>
+             <ul class="nav pull-right">
+				<li><a href="">Bienvenido <strong><?php echo $_SESSION['user'];?></strong> </a></li>
+			    <li><a href="desconectar.php"> Cerrar Cesión </a></li>			 
+		     </ul>
           </ol>
          </div>
        </div>
@@ -220,8 +224,13 @@
                 <div class="desc">Tracy Chapman - Give Me One Reason</div>
               </div>
 
+           </div>
+         </div>
+         <div class="arrows">
+          <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+          <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
         </div>
-        </div>
+
 
 
           </div>
@@ -234,7 +243,7 @@
 
   <!-- Start footer -->
   <footer id="mu-footer">
-    <!-- start footer top -->
+    <!-- start footer top 
     <div class="mu-footer-top">
       <div class="container">
         <div class="mu-footer-top-area">
@@ -289,7 +298,7 @@
         </div>
       </div>
     </div>
-    <!-- end footer top -->
+     end footer top -->
     <!-- start footer bottom -->
     <div class="mu-footer-bottom">
       <div class="container">
@@ -323,6 +332,7 @@
 
   <!-- Custom js -->
   <script src="assets/js/custom.js"></script> 
+  <script type="text/javascript" src="videos/script.js"></script>  
 
   </body>
 </html>

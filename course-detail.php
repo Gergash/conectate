@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	if (@!$_SESSION['user']) {
+		header("Location:login.php");
+	}elseif ($_SESSION['rol']==1) {
+		header("Location:admin.php");
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -152,6 +160,7 @@
            <ol class="breadcrumb">
             <li><a href="#">empieza tu camino y elige</a></li> 
             <li class="active">lo que quieras</li>
+			
           </ol>
          </div>
        </div>

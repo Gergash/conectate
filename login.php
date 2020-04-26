@@ -1,25 +1,4 @@
 
-<?php
-
-  require 'database.php';
-
-  $message = '';
-
-  if (!empty($_POST['email']) && !empty($_POST['password'])) {
-    $sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
-    $stmt = $conn->prepare($sql);
-    $stmt->bindParam(':email', $_POST['email']);
-    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
-    $stmt->bindParam(':password', $password);
-
-    if ($stmt->execute()) {
-      $message = 'Successfully created new user';
-    } else {
-      $message = 'Sorry there must have been an issue creating your account';
-    }
-  }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -131,9 +110,8 @@
             <li><a href="index.html">Home</a></li>            
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Course <span class="fa fa-angle-down"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="course.html">Course Archive</a></li>                
-                <li><a href="course-detail.html">Course Detail</a></li>                
+              <ul class="dropdown-menu" role="menu">               
+                <li><a href="course-detail.php">Elige el primer curso</a></li>                
               </ul>
             </li>           
             <li><a href="gallery.html">Gallery</a></li>
@@ -175,9 +153,9 @@
      <div class="row">
        <div class="col-md-12">
          <div class="mu-page-breadcrumb-area">
-           <h2>Logeate</h2>
+           <h2>registrate</h2>
            <ol class="breadcrumb">
-            <li><a href="#">Y SIGUE</a></li>            
+            <li><a href="#">SIGUE</a></li>            
             <li class="active">APRENDIENDO</li>
           </ol>
          </div>
@@ -192,22 +170,57 @@
     <div class="container">
       <div class="row">
        <div class="col-md-12">
-          <div class="mu-error-area">
-             <?php require 'partials/header.php' ?>
+	   <div class="Ingreso">      
+	<table border="0" align="center" valign="middle">
+		<tr>
+		<td rowspan=2>
+		<form action="validar.php" method="post">
 
-             <?php if(!empty($message)): ?>
-             <p> <?= $message ?></p>
-             <?php endif; ?>
+		<table border="0">
 
-             <h1>Login</h1>
-             <span>or <a href="signup.php">SignUp</a></span>
+		<tr><td><label style="font-size: 14pt"><b>Correo: </b></label></td>
+			<td width=80> <input class="form-group has-success" style="border-radius:15px;" type="text" name="mail"></td></tr>
+		<tr><td><label style="font-size: 14pt"><b>Contraseña: </b></label></td>
+			<td witdh=80><input style="border-radius:15px;" type="password" name="pass"></td></tr>
+		<tr><td></td>
+			<td width=80 align=center><input class="btn btn-primary" type="submit" value="Aceptar"></td>
+			</tr></tr></table>
+		</form>
 
-             <form action="login.php" method="POST">
-             <input name="email" type="text" placeholder="Enter your email">
-             <input name="password" type="password" placeholder="Enter your Password">
-             <input type="submit" value="Submit">
-            </form>
-          </div>
+<!-- formulario registro -->
+
+<form method="post" action="" >
+  <fieldset>
+    <legend  style="font-size: 18pt"><b>Registro</b></legend>
+    <div class="form-group">
+      <label style="font-size: 14pt"><b>Ingresa tu nombre</b></label>
+      <input type="text" name="realname" class="form-control" placeholder="Ingresa tu nombre" />
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt; color: #FFFFFF;"><b>Ingresa tu email</b></label>
+      <input type="text" name="nick" class="form-control"  required placeholder="Ingresa mail"/>
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt; color: #FFFFFF;"><b>Ingresa tu Password</b></label>
+      <input type="password" name="pass" class="form-control"  placeholder="Ingresa contraseña" />
+    </div>
+    <div class="form-group">
+      <label style="font-size: 14pt"><b>Repite tu contraseña</b></label>
+      <input type="password" name="rpass" class="form-control" required placeholder="repite contraseña" />
+    </div>
+      
+    </div>
+   
+    <input  class="btn btn-danger" type="submit" name="submit" value="Registrarse"/>
+
+  </fieldset>
+</form>
+</div>
+<?php
+		if(isset($_POST['submit'])){
+			require("registro.php");
+		}
+	?>
         </div>
       </div>
     </div>

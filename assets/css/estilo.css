@@ -19,7 +19,8 @@ body {
   			padding: 20px 0;
   		}
 
-  		.container2 {
+  		.container2
+  		 {
   			width: 100%;
   			max-width: 854px;
   			min-width: 440px;
