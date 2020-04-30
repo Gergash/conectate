@@ -104,13 +104,13 @@
           </button>
           <!-- LOGO -->              
           <!-- TEXT BASED LOGO -->
-          <a class="navbar-brand" href="index.html"><i class="fa fa-"></i><span><img src= "assets/img/logo2.PNG" height="50" width="200"></span></a>
+          <a class="navbar-brand" href="index.php"><i class="fa fa-"></i><span><img src= "assets/img/logo2.PNG" height="50" width="200"></span></a>
           <!-- IMG BASED LOGO  -->
           <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-            <li><a href="index.html">Home</a></li>            
+            <li><a href="index.php">Home</a></li>            
             <li class="dropdown active">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Course <span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu" role="menu">                
@@ -214,7 +214,7 @@
                       <div class="col-md-6">
                         <div class="mu-latest-course-single">
                           <figure class="mu-latest-course-img">
-                            <a href="#"><img alt="img" src="assets/img/courses/77.jpg"></a>
+                            <a href="cursoZa.php"><img alt="img" src="assets/img/courses/77.jpg"></a>
                             <figcaption class="mu-latest-course-imgcaption">
                               <a href="#">Zadarma crm</a>
                               <span><i class="fa fa-clock-o"></i></span>
@@ -232,7 +232,7 @@
                       <div class="col-md-6">
                         <div class="mu-latest-course-single">
                           <figure class="mu-latest-course-img">
-                            <a href="#"><img alt="img" src="assets/img/courses/5.jpg"></a>
+                            <a href="cursoFat.php"><img alt="img" src="assets/img/courses/5.jpg"></a>
                             <figcaption class="mu-latest-course-imgcaption">
                               <a href="#">fat free crm</a>
                               <span><i class="fa fa-clock-o"></i></span>
@@ -251,7 +251,7 @@
                       <div class="col-md-6">
                         <div class="mu-latest-course-single">
                           <figure class="mu-latest-course-img">
-                            <a href="#"><img alt="img" src="assets/img/courses/6.jpg"></a>
+                            <a href="cursoPip.php"><img alt="img" src="assets/img/courses/6.jpg"></a>
                             <figcaption class="mu-latest-course-imgcaption">
                               <a href="#">Pipedrive</a>
                               <span><i class="fa fa-clock-o"></i></span>
