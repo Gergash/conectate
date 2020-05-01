@@ -1,4 +1,11 @@
-
+<?php
+	session_start();
+	if (@!$_SESSION['user']) {
+		header("Location:login.php");
+	}elseif ($_SESSION['rol']==1) {
+		header("Location:admin.php");
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>    
@@ -158,10 +165,8 @@
          <div class="mu-page-breadcrumb-area">
            <h2>Salesforce crm</h2>
            <ol class="breadcrumb">
-             <ul class="nav pull-right">
 				<li><a href="">Bienvenido <strong><?php echo $_SESSION['user'];?></strong> </a></li>
 			    <li><a href="desconectar.php"> Cerrar Cesión </a></li>			 
-		     </ul>
           </ol>
          </div>
        </div>

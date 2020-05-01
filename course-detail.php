@@ -110,26 +110,26 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-            <li><a href="index.php">Home</a></li>            
+            <li><a href="index.php">Inicio</a></li>            
             <li class="dropdown active">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Course <span class="fa fa-angle-down"></span></a>
-              <ul class="dropdown-menu" role="menu">                
-                <li><a href="course-detail.html">Elige el primer curso</a></li>                
+              <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Cursos<span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="course-detail.php">Elige el primer curso</a></li>                
               </ul>
             </li>           
-            <li><a href="gallery.html">Gallery</a></li>
+            <!--<li><a href="gallery.html">Gallery</a></li>-->
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="fa fa-angle-down"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Suscritos<span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="blog-archive.html">Blog Archive</a></li>                
-                <li><a href="blog-single.html">Blog Single</a></li>                
+                <li><a href="blog-archive.php">Noticias</a></li>                
+                <!--<li><a href="blog-single.html">Blog Single</a></li>-->                
               </ul>
             </li>            
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="404.html">404 Page</a></li>               
+            <li><a href="contact.html">Feedback</a></li>
+            <li><a href="Login.php">Login</a></li>               
             <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
-          </ul>                    
-        </div><!--/.nav-collapse -->        
+          </ul>                   
+        </div><!--/.nav-collapse -->    
       </div>     
     </nav>
   </section>
@@ -158,6 +158,8 @@
          <div class="mu-page-breadcrumb-area">
            <h2>Elige el curso</h2>
            <ol class="breadcrumb">
+		    <li><a href="desconectar.php"> Cerrar Cesión </a></li>
+		    <li><a href="">Bienvenido <strong><?php echo $_SESSION['user'];?></strong> </a></li>	
             <li><a href="#">empieza tu camino y elige</a></li> 
             <li class="active">lo que quieras</li>
 			

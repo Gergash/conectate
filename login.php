@@ -107,26 +107,26 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-            <li><a href="index.html">Home</a></li>            
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Course <span class="fa fa-angle-down"></span></a>
-              <ul class="dropdown-menu" role="menu">               
+            <li><a href="index.php">Inicio</a></li>            
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Cursos<span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
                 <li><a href="course-detail.php">Elige el primer curso</a></li>                
               </ul>
             </li>           
-            <li><a href="gallery.html">Gallery</a></li>
+            <!--<li><a href="gallery.html">Gallery</a></li>-->
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="fa fa-angle-down"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Suscritos<span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="blog-archive.html">Blog Archive</a></li>                
-                <li><a href="blog-single.html">Blog Single</a></li>                
+                <li><a href="blog-archive.php">Noticias</a></li>                
+                <!--<li><a href="blog-single.html">Blog Single</a></li>-->                
               </ul>
             </li>            
-            <li><a href="contact.html">Contact</a></li>
-            <li class="active"><a href="signup.php">SignUp</a></li>               
+            <li><a href="contact.html">Feedback</a></li>
+            <li><a href="Login.php">Login</a></li>               
             <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
-          </ul>                     
-        </div><!--/.nav-collapse -->        
+          </ul>                   
+        </div><!--/.nav-collapse -->  
       </div>     
     </nav>
   </section>
@@ -155,8 +155,8 @@
          <div class="mu-page-breadcrumb-area">
            <h2>registrate</h2>
            <ol class="breadcrumb">
-            <li><a href="#">SIGUE</a></li>            
-            <li class="active">APRENDIENDO</li>
+            <li><a href="#">REGISTRATE</a></li>            
+            <li class="active">EMPIEZA A APRENDER</li>
           </ol>
          </div>
        </div>
@@ -233,56 +233,7 @@
     <!-- start footer top -->
     <div class="mu-footer-top">
       <div class="container">
-        <div class="mu-footer-top-area">
-          <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3">
-              <div class="mu-footer-widget">
-                <h4>Information</h4>
-                <ul>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="">Features</a></li>
-                  <li><a href="">Course</a></li>
-                  <li><a href="">Event</a></li>
-                  <li><a href="">Sitemap</a></li>
-                  <li><a href="">Term Of Use</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
-              <div class="mu-footer-widget">
-                <h4>Student Help</h4>
-                <ul>
-                  <li><a href="">Get Started</a></li>
-                  <li><a href="#">My Questions</a></li>
-                  <li><a href="">Download Files</a></li>
-                  <li><a href="">Latest Course</a></li>
-                  <li><a href="">Academic News</a></li>                  
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
-              <div class="mu-footer-widget">
-                <h4>News letter</h4>
-                <p>Get latest update, news & academic offers</p>
-                <form class="mu-subscribe-form">
-                  <input type="email" placeholder="Type your Email">
-                  <button class="mu-subscribe-btn" type="submit">Subscribe!</button>
-                </form>               
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
-              <div class="mu-footer-widget">
-                <h4>Contact</h4>
-                <address>
-                  <p>P.O. Box 320, Ross, California 9495, USA</p>
-                  <p>Phone: (415) 453-1568 </p>
-                  <p>Website: www.markups.io</p>
-                  <p>Email: info@markups.io</p>
-                </address>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
     <!-- end footer top -->
