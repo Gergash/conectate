@@ -68,9 +68,8 @@
                 <div class="mu-header-top-right">
                   <nav>
                     <ul class="mu-top-social-nav">
-                      <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                      <li><a href="#"><span class="fa fa-instagram"></span></a></li>
                       <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                      <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
                       <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
                       <li><a href="#"><span class="fa fa-youtube"></span></a></li>
                     </ul>
@@ -334,7 +333,7 @@
             <!-- Start Title -->
             <div class="mu-title">
               <h2>Que te podemos ofrecer?</h2>
-              <p>es importante que se pas lo que tenemos para ti</p>
+              <p>es importante que sepas lo que tenemos para ti</p>
             </div>
             <!-- End Title -->
             <!-- Start features content -->

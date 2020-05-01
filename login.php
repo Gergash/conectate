@@ -71,9 +71,8 @@
                 <div class="mu-header-top-right">
                   <nav>
                     <ul class="mu-top-social-nav">
-                      <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                      <li><a href="#"><span class="fa fa-instagram"></span></a></li>
                       <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                      <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
                       <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
                       <li><a href="#"><span class="fa fa-youtube"></span></a></li>
                     </ul>

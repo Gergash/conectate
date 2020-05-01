@@ -64,7 +64,7 @@
                 <div class="mu-header-top-left">
                   <div class="mu-top-email">
                     <i class="fa fa-envelope"></i>
-                    <span>info@markups.io</span>
+                    <span>ConectarTE150@gmail.com</span>
                   </div>
                   <div class="mu-top-phone">
                     <i class="fa fa-phone"></i>
@@ -76,9 +76,8 @@
                 <div class="mu-header-top-right">
                   <nav>
                     <ul class="mu-top-social-nav">
-                      <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                      <li><a href="#"><span class="fa fa-instagram"></span></a></li>
                       <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                      <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
                       <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
                       <li><a href="#"><span class="fa fa-youtube"></span></a></li>
                     </ul>

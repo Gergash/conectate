@@ -10,7 +10,7 @@ if (@!$_SESSION['user']) {
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Proyecto Academias</title>
+    <title>Usuarios de conectate</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 
@@ -25,11 +25,7 @@ if (@!$_SESSION['user']) {
 <body data-offset="40" background="images/fondotot.jpg" style="background-attachment: fixed">
 <div class="container">
 <header class="header">
-<div class="row">
-	<?php
-	include("include/cabecera.php");
-	?>
-</div>
+
 </header>
 
   <!-- Navbar
